@@ -99,10 +99,10 @@ jobs:
         env:
           DATABASE_URL: mysql://root:root@localhost:3306/app_db
 
-      - name: Run seeder
-        run: npm run seed && npm run mock:campaign
-        env:
-          DATABASE_URL: mysql://root:root@localhost:3306/app_db
+      # - name: Run seeder
+      #   run: npm run seed && npm run mock:campaign
+      #   env:
+      #     DATABASE_URL: mysql://root:root@localhost:3306/app_db
 
       - name: Build application
         run: npm run build
